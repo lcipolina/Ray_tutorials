@@ -1,5 +1,5 @@
 import ray
-import train_model_ray
+import train_ViT_ray
 import os
 
 # Ensure all required environment variables are set
@@ -45,7 +45,7 @@ config = {
 
 
 # Call the python function to run, passing the resources
-train_model_ray.train_papyrus_sheet_detection(config)
+train_ViT_ray.train_papyrus_sheet_detection(config)
 
 # Shutdown Ray
 ray.shutdown()
